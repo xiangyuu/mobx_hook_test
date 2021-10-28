@@ -8,7 +8,7 @@ function Mask(props) {
     <div className='mask'>
       <ul>
         {store.cartList.map((e,key)=>(
-          <li key={key}>{e.name}----${e.cost}</li>
+          <li key={key}>{e.name}----${e.cost}---<span onClick={()=>store.delCartItem(e)}>X</span></li>
         ))}
       </ul>
     </div>

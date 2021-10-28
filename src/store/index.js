@@ -21,6 +21,9 @@ class AppStore{
     this.cartList.push(product)
   }
 
+  @action delCartItem(e){
+    this.cartList.remove(e)
+  }
 }
 const store=new AppStore()
 export default store
